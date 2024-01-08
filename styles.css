@@ -1,269 +1,84 @@
-/* Reset default margin and padding */
-body, h1, h2, h3, p, ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* Basic styling */
-body {
-  font-family: 'amigh', sans-serif;
-  line-height: 1.6;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-header {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1);
-}
-
-.title {
-  font-size: 36px;
-  margin-bottom: 20px;
-  font-family: 'Amigh', sans-serif;
-  letter-spacing: 0px;
-  color: #908471; /* Stonewall */
-}
-
-/* Animazione per la rotazione */
-@keyframes rotateAnimation {
-  0% {
-    transform: rotate(0deg);
+/* Aggiunta dello stile del font personalizzato */
+@font-face {
+    font-family: 'Amigh';
+    src: url('asterina.otf') format('opentype');
   }
-  100% {
-    transform: rotate(230deg);
-  }
-}
-
-/* Applicazione dell'animazione */
-.rotate {
-  display: inline-block;
-  animation: rotateAnimation 1.5s ease-out forwards;
-}
-
-.small-menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; /* Aggiunta di spazio sopra la barra di navigazione */
-}
-
-.small-menu li {
-  margin: 0 50px; /* Modifica dello spazio tra gli elementi del menu */
-}
-
-.small-menu li a {
-  text-decoration: none;
-  color: #333;
-}
-
-main {
-  padding: 20px;
-}
-
-.section {
-  text-align: center;
-  padding: 60px 0;
-  transition: background-color 0.3s ease;
-}
-
-.section:hover {
-  background-color: #eee;
-}
-
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0 -2px 25px rgba(0, 0, 0, 0.1);
-}
-
-/* Nuovi stili aggiunti per i nuovi elementi */
-
-.about-info {
-  margin-top: 40px;
-}
-
-.about-info img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-
-.services {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.service {
-  width: 45%; /* Larghezza regolabile in base alle tue esigenze */
-  margin-bottom: 30px;
-}
-
-.service h3 {
-  margin-bottom: 10px;
-}
-
-.service img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
-}
-
-form {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-form label,
-form input,
-form textarea,
-form button {
-  margin-bottom: 20px;
-}
-
-form input,
-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  padding: 10px 20px;
-  background-color: #C1B59F;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #908471; /* Cambia colore al passaggio del mouse */
-}
-
-
-/* Portfolio / Gallery */
-#portfolio .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-  margin-top: 20px;
-}
-
-#portfolio .gallery img {
-  width: 100%;
-  height: auto;
-}
-
-/* Testimonials */
-#testimonials .testimonial {
-  margin-top: 20px;
-}
-
-#testimonials blockquote {
-  border-left: 5px solid #C1B59F; /* Colore bordo testimonial */
-  padding-left: 15px;
-}
-
-#testimonials blockquote p {
-  font-style: italic;
-}
-
-#testimonials blockquote cite {
-  font-weight: bold;
-  margin-top: 10px;
-  display: block;
-}
-
-/* Blog / News */
-#blog .blog-post {
-  margin-top: 20px;
-}
-
-#blog .blog-post h3 {
-  margin-bottom: 10px;
-}
-
-/* FAQ */
-#faq .faq-item {
-  margin-top: 20px;
-}
-
-#faq .faq-item a {
-  color: #C1B59F; /* Colore link FAQ */
-  text-decoration: underline;
-}
-
-/* Partnerships / Collaborations */
-#partnerships .partnership-info {
-  margin-top: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  /* Stili per dispositivi mobili o schermi più piccoli */
-  /* Aggiungi qui le regole CSS per adattare il layout ai dispositivi mobili */
+  
   body {
-    /* Esempio di regola per impostare il font-size più piccolo per dispositivi mobili */
-    font-size: 14px;
+    font-family: 'Amigh', Arial, sans-serif; /* Utilizzo del font personalizzato */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* Colore di sfondo */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 96px;
+    margin-bottom: 20px;
+    font-family: 'Amigh', sans-serif; /* Utilizzo del font personalizzato */
+    letter-spacing: 0px;
+    color: #908471; /* Stonewall */
+  }
+  
+  /* Animazione per la rotazione */
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(230deg);
+    }
+  }
+  
+  /* Applicazione dell'animazione */
+  .rotate {
+    display: inline-block;
+    animation: rotateAnimation 1.5s ease-out forwards;
+  }
+  
+  /* Stili CSS base per la visualizzazione mobile */
+/* ... Altri stili CSS ... */
+
+/* Stili specifici per dispositivi mobili */
+
+/* Modifiche per adattarsi a dispositivi con larghezza massima di 600px */
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: #fff; /* Sfondo bianco per la visualizzazione mobile */
   }
 
-  header {
-    /* Esempio di regola per modificare l'aspetto dell'header su dispositivi mobili */
-    padding: 10px;
-    padding-bottom: 20px;
-    font-size: 18px;
+  .container {
+    padding: 20px; /* Aggiungi spazio intorno al contenuto */
   }
 
   .title {
-    /* Modifiche al titolo o al logo per dispositivi mobili */
-    font-size: 84px;
+    font-size: 44px; /* Riduci la dimensione del titolo per dispositivi mobili */
+    margin-bottom: 10px; /* Riduci lo spazio tra il titolo e il contenuto */
   }
 
-  /* Aggiungi altri stili specifici per dispositivi mobili qui */
-
-  /* Modifica il layout dei componenti per dispositivi mobili */
-  .content {
-    font-size: 38px;
-    /* Esempio di regola per ridurre il padding nei contenuti su dispositivi mobili */
-    padding: 20px;
+  p {
+    font-size: 16px; /* Dimensione del testo del paragrafo */
+    line-height: 1.5; /* Altezza della riga per una migliore leggibilità */
+    color: #333; /* Colore del testo scuro */
   }
-  img {
-    /* Esempio di riduzione delle dimensioni delle immagini */
-    max-width: 100%; /* Imposta la larghezza massima dell'immagine al 100% del contenitore genitore */
-    height: auto; /* Assicura che l'immagine mantenga le proporzioni corrette */
+  .content-image {
+    max-width: 100%; /* Assicura che l'immagine non superi la larghezza del suo contenitore */
+    height: auto; /* Mantiene l'aspetto proporzionale dell'immagine */
+    margin-bottom: 0px; /* Aggiunge spazio sotto l'immagine */
   }
-  .section {
-    text-align: center;
-    padding: 0px 0;
-    transition: background-color 0.3s ease;
+  /* Stili specifici per l'immagine */
+.content-image {
+    width: 100%; /* Assicura che l'immagine si adatti alla larghezza del suo contenitore */
+    height: 100px; /* Altezza fissa per mostrare solo la parte desiderata dell'immagine */
+    object-fit: cover; /* Taglia l'immagine per adattarla all'elemento padre mantenendo l'aspetto */
+    object-position: center bottom; /* Posizione dell'immagine - in questo caso, mostra la parte inferiore centrale */
+    overflow: hidden; /* Nasconde le parti dell'immagine al di fuori del contenitore */
   }
-  .small-menu {
-    padding: 0; /* Rimuovi il padding predefinito */
-    font-size: 120%;
-  }
-
-  .small-menu li {
-    display: block; /* Mostra gli elementi del menu uno sotto l'altro */
-    margin-bottom: 5px; /* Aggiungi spazio tra gli elementi del menu */
-  }
-
-  .small-menu li a {
-    display: block; /* Mostra i link come blocchi per occupare l'intera larghezza disponibile */
-    padding: 10px; /* Aggiungi spazio attorno ai link */
-    text-decoration: none; /* Rimuovi la sottolineatura dei link */
-    border: 1px solid #cccccc00; /* Aggiungi un bordo per evidenziare i link */
-    border-radius: 5px; /* Aggiungi angoli arrotondati ai link */
-  }
-
-  /* Aggiungi altre regole CSS per adattare il layout ai dispositivi mobili */
 }

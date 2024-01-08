@@ -226,14 +226,14 @@ form button:hover {
 
   .title {
     /* Modifiche al titolo o al logo per dispositivi mobili */
-    font-size: 44px;
+    font-size: 84px;
   }
 
   /* Aggiungi altri stili specifici per dispositivi mobili qui */
 
   /* Modifica il layout dei componenti per dispositivi mobili */
   .content {
-    font-size: 18px;
+    font-size: 38px;
     /* Esempio di regola per ridurre il padding nei contenuti su dispositivi mobili */
     padding: 20px;
   }
@@ -244,12 +244,12 @@ form button:hover {
   }
   .section {
     text-align: center;
-    size: 22%;
     padding: 0px 0;
     transition: background-color 0.3s ease;
   }
   .small-menu {
     padding: 0; /* Rimuovi il padding predefinito */
+    font-size: 120%;
   }
 
   .small-menu li {

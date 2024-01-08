@@ -76,7 +76,7 @@
   /* Stili specifici per l'immagine */
 .content-image {
     width: 100%; /* Assicura che l'immagine si adatti alla larghezza del suo contenitore */
-    height: 100px; /* Altezza fissa per mostrare solo la parte desiderata dell'immagine */
+    height: 450px; /* Altezza fissa per mostrare solo la parte desiderata dell'immagine */
     object-fit: cover; /* Taglia l'immagine per adattarla all'elemento padre mantenendo l'aspetto */
     object-position: center bottom; /* Posizione dell'immagine - in questo caso, mostra la parte inferiore centrale */
     overflow: hidden; /* Nasconde le parti dell'immagine al di fuori del contenitore */

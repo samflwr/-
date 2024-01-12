@@ -1,4 +1,28 @@
-<canvas id="heart"></canvas>
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Minimalist Site</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <style>
+     /* ... Codice per il font e la rotazione ... */
+   </style>
+ </head>
+ <body>
+   <div class="container">
+     <h1 class="title">
+       <span class="rotate">e</span>.space
+     </h1>
+     <canvas id="heart"></canvas>
+     <p>^^sasa</p>
+   </div>
+ </body>
+ </html>
+
+
+
 <script>
   window.requestAnimationFrame =
     window.__requestAnimationFrame ||
@@ -31,7 +55,7 @@ var init = function () {
     var width = canvas.width = koef * innerWidth;
     var height = canvas.height = koef * innerHeight;
     var rand = Math.random;
-     ctx.fillStyle = "#ffffff";
+     ctx.fillStyle = "#000";
     ctx.fillRect(0, 0, width, height);
 
     var heartPosition = function (rad) {
